@@ -1,0 +1,26 @@
+{
+  "name": "jasmine-custom-matchers",
+  "description": "Custom matchers for Jasmine 2.0",
+  "homepage": "https://github.com/wagerfield/jasmine-custom-matchers",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Matthew Wagerfield <matthew@wagerfield.com>",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wagerfield/jasmine-custom-matchers.git"
+  },
+  "keywords": [
+    "jasmine",
+    "custom",
+    "matcher",
+    "matchers"
+  ],
+  "devDependencies": {
+    "karma": "^0.12.1",
+    "karma-chrome-launcher": "^0.1.2",
+    "karma-jasmine": "^0.2.2"
+  }
+}
