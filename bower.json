@@ -1,0 +1,24 @@
+{
+  "name": "jasmine-custom-matchers",
+  "description": "Custom matchers for Jasmine 2.0",
+  "homepage": "https://github.com/wagerfield/jasmine-custom-matchers",
+  "version": "0.0.0",
+  "license": "MIT",
+  "authors": [
+    "Matthew Wagerfield <matthew@wagerfield.com>"
+  ],
+  "keywords": [
+    "jasmine",
+    "custom",
+    "matcher",
+    "matchers"
+  ],
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "karma.conf.js",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
