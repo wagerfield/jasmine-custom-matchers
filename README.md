@@ -1,12 +1,23 @@
 # Jasmine Custom Matchers
 
-> Custom matchers for [Jasmine 2.0][jasmine]
+> Custom matchers for [Jasmine 2.0][jasmine].
 
 ## Usage
 
-Matchers are [automatically added][automatic] to Jasmine's global scope within a [`beforeEach`][beforeeach] function.
+> Custom matchers are added to a global [`CustomMatchers`][custommatchers] namespace Object.
 
-To use the matchers, simply reference or include them in your `test` suite directory.
+To use the matchers, you will first need to *reference* them alongside your own specification files or *include* them in your `test` suite directory. To make the matchers available within your specifications, you will need to add the `CustomMatchers` Object to `jasmine` within a [`beforeEach`][beforeeach] function prior to your assertions:
+
+```javascript
+describe("something...", function() {
+  beforeEach(function() {
+    jasmine.addMatchers(CustomMatchers);
+  });
+  it("should behave...", function() {
+    expect(1).toBeAnInteger(); // toBeAnInteger() should now be in scope and available
+  });
+});
+```
 
 ## Matchers
 
@@ -105,8 +116,8 @@ Matthew Wagerfield: [@mwagerfield][twitter]
 
 Licensed under [MIT][mit]. Enjoy.
 
-[automatic]: ./matchers/toBeAnInteger.js#L4
-[beforeeach]: http://jasmine.github.io/2.0/introduction.html#section-Setup_and_Teardown
+[custommatchers]: ./matchers/toBeAnInteger.js#L1
+[beforeeach]: http://jasmine.github.io/2.0/custom_matcher.html#section-15
 [jasmine]: http://jasmine.github.io/2.0/introduction.html
 [karma]: http://karma-runner.github.io/0.12/index.html
 [twitter]: http://twitter.com/mwagerfield
