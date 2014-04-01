@@ -1,4 +1,7 @@
 describe("toOnlyContain(expected)", function() {
+  beforeEach(function() {
+    jasmine.addMatchers(CustomMatchers);
+  });
   it("should assert true for Arrays only containing expected values", function() {
 
     expect([1, 1]).toOnlyContain(1);

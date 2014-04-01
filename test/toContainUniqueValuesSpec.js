@@ -1,4 +1,7 @@
 describe("toContainUniqueValues()", function() {
+  beforeEach(function() {
+    jasmine.addMatchers(CustomMatchers);
+  });
   it("should assert true for Arrays with unique values", function() {
 
     expect([1, 2, 3]).toContainUniqueValues();
