@@ -27,5 +27,3 @@ describe("toOnlyContain(expected)", function() {
     expect(animals).not.toOnlyContain(jasmine.any(Rodent));
   });
 });
-
-
