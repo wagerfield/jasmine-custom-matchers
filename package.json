@@ -2,7 +2,7 @@
   "name": "jasmine-custom-matchers",
   "description": "Custom matchers for Jasmine 2.0",
   "homepage": "https://github.com/wagerfield/jasmine-custom-matchers",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "author": "Matthew Wagerfield <matthew@wagerfield.com>",
   "scripts": {
